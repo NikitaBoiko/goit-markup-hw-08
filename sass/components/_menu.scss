@@ -1,0 +1,55 @@
+.nav__button {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+
+	&:hover,
+	&:focus {
+		fill: getColor(accent);
+	}
+
+	.icon-cross {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.nav__button.is-open {
+	.icon-cross {
+		display: block;
+	}
+	.icon-menu {
+		display: none;
+	}
+}
+
+.nav__container {
+	@media screen and (max-width: 767px) {
+		display: none;
+		position: absolute;
+		top: 102%;
+		left: 0;
+		width: 100%;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		background-color: getColor(white-text);
+        text-align: center;
+        
+	&.is-open {
+		display: block;
+		z-index: 1;
+	}
+	}
+
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: space-between;
+		flex-grow: 1;
+	}
+}

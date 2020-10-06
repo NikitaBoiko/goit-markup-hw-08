@@ -1,37 +1,20 @@
-.logo-header {
-	color: $title-text-color;
-	text-decoration: none;
-	font-family: "Raleway", sans-serif;
-	letter-spacing: 0.03em;
-	font-size: 26px;
-	font-weight: 700;
-	line-height: 1.19;
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &__web {
+  color: getColor(accent);
 }
 
-.logo-style {
-	color: $accent-color;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	color: var(--black);
-	font-family: "Raleway", sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
+&__studio {
+  color: #000000;
 }
 
-// Footer
-
-.logo-style {
-	color: $accent-color;
-	margin-top: 60px;
+&__studio--footer {
+  font-weight: 700;
+  color: getColor(white-text);
 }
-.logo-over {
-	color: $text-white-color;
-	text-decoration: none;
-	font-family: Raleway, sans-serif;
-	letter-spacing: 0.03em;
-	font-size: 26px;
-	font-weight: 700;
-	line-height: 1.19;
 }
